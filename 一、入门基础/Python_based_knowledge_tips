@@ -1,0 +1,19 @@
+#因为 "5" 是字符串，不是数字。字符串 × 整数 = 重复拼接，不是数学乘法。
+#"5" * 2 → "55"
+#"Ha" * 3 → "HaHaHa"
+a = "5"    # str
+b = 2      # int
+print(a * b)   # → "55"
+
+#要想得到数学上的 5 × 2 = 10，需要先转成 int：
+a = int("5")   # 5
+print(a * 2)   # 10
+
+#Python 的 falsy 值（被视为 False）一览：
+#None        → False
+#0, 0.0, 0j  → False   （数值零）
+#""          → False   （空字符串）
+#[], (), {}  → False   （空容器）
+#set()       → False   （空集合）
+#range(0)    → False   （空 range）
+#其余全是 True
